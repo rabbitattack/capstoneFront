@@ -2,21 +2,22 @@ import React from 'react';
 import './App.css';
 import Landing from './components/Landing.js';
 import Expenses from './components/Expenses';
-import Image from './components/fogForestCar.jpg'
+// import Image from './components/fogForestCar.jpg'
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <ul>
-            <li><img src={Image} alt="golf" /></li>
-          </ul>
+          {/* <ul>
+            <li><img src={Image} className="golf" /></li>
+          </ul> */}
+          <div className="golf"></div>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <p>{Landing}</p>
-          <button onclick={Expenses.js} class="expenses">My Monthly Expenses</button>
+          <button className="expenses">My Monthly Expenses</button>
         </header>
       </div>
     );

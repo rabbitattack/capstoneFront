@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+.golf{
+  background-image: url("/fogForestCar.jpg");
+  height: 350vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
