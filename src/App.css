@@ -38,3 +38,10 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.login {
+  justify-content: center;
+  height: 20vh;
+  width: 5vw;
+  box-shadow: 2px;
+}

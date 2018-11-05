@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Landing from './components/Landing.js';
 import Expenses from './components/Expenses';
+import Login from './components/Login'
 // import Image from './components/fogForestCar.jpg'
 
 class App extends React.Component {
@@ -12,12 +13,11 @@ class App extends React.Component {
           {/* <ul>
             <li><img src={Image} className="golf" /></li>
           </ul> */}
-          <div className="golf"></div>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <p>{Landing}</p>
-          <button className="expenses">My Monthly Expenses</button>
+          <div className="golf">
+            <p>{Landing}</p>
+            <Login />
+            {/* <button onClick={""} className="expenses">My Monthly Expenses</button> */}
+          </div>
         </header>
       </div>
     );
