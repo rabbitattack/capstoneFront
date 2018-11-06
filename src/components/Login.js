@@ -1,14 +1,20 @@
 import React from 'react';
+// import Landing from '/components/landing.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Login extends React.Component {
 
     login = () => {
-        console.log("Button was clicked G!")
+
     }
 
     render() {
         return (
-            <button onClick={this.login} className='login'>Click Me!</button>
+            <Router>
+                <ul>
+                    <Link to="/Landing.js">Home</Link>
+                </ul>
+            </Router>
         );
     }
 }

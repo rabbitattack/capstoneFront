@@ -6,8 +6,8 @@ class Expenses extends React.Component {
             <div className="sixpense">
                 <header className="App-header">
                     <p>
-                        Edit <code>src/App.js</code> and save to reload.
-            </p>
+
+                    </p>
                 </header>
             </div>
         );

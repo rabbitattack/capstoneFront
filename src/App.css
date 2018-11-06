@@ -32,8 +32,8 @@
 }
 
 .golf{
-  background-image: url("/fogForestCar.jpg");
-  height: 350vh;
+  background-image: url("/carFog.png");
+  height: 100vh;
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,5 +43,13 @@
   justify-content: center;
   height: 3vh;
   width: 7vw;
-  box-shadow: px;
+  box-shadow: 3px;
+}
+
+.land{
+  background-image: ("/openRoad.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
