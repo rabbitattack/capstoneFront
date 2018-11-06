@@ -1,6 +1,6 @@
 import React from 'react';
 // import Landing from '/components/landing.js';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Login extends React.Component {
 
@@ -10,11 +10,12 @@ class Login extends React.Component {
 
     render() {
         return (
-            <Router>
-                <ul>
-                    <Link to="/Landing.js">Home</Link>
-                </ul>
-            </Router>
+            <ul>
+                <li>
+                    <Link to="/Landing">Home</Link>
+                </li>
+            </ul>
+
         );
     }
 }
