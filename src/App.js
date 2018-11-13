@@ -14,7 +14,6 @@ class App extends React.Component {
         <div className="App">
           <header className="App-header">
             <div className="golf">
-              <p>{Landing}</p>
               <ul>
                 <li>
                   <Link to="/Landing/">Landing</Link>
@@ -30,8 +29,8 @@ class App extends React.Component {
           <Route path="/Landing/" component={Landing} />
           <Route path="/Expenses/" component={Expenses} />
           <Route path="/Bills" component={Bills} />
-        </div>
-      </Router>);
+        </div >
+      </Router >);
   }
 }
 

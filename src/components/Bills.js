@@ -15,6 +15,9 @@ class Bills extends React.Component {
         ]
     }
 
+    onClickHandler = () => {
+        console.log('on click handler working')
+    }
 
     render() {
         return (
@@ -38,7 +41,7 @@ class Bills extends React.Component {
                         <option>Single Payment</option>
                         <option>Upcoming Expense</option>
                     </Input>
-                    <Button name="expense" className="expense" onClick={this.state.expenses[1].frequency}>Add Expense</Button>
+                    <Button name="expense" className="expense" onClick={this.onClickHandler}>Add Expense</Button>
                 </FormGroup>
             </Form >
         )
