@@ -1,5 +1,10 @@
 .App {
+  background-image: url("/carFog.png");
   text-align: center;
+  height: 175vh;
+  width: 150vw;
+  background-size: cover;
+  background-repeat: no-repeat
 }
 
 .App-logo {
@@ -33,8 +38,8 @@
 
 .golf{
   background-image: url("/carFog.png");
-  height: 100vh;
-  width: 100vw;
+  height: 175vh;
+  width: 150vw;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -73,4 +78,18 @@
   box-shadow: 2px;
   height: 3vh;
   width: 6vw;
+}
+/* .chart {
+  width:400px ;
+  height:400px ;
+} */
+.chartlink{
+  position: fixed;
+  bottom: 100;
+  left: 0;
+  width: 300px;
+}
+.link {
+  position: relative; 
+  width: 100%; 
 }

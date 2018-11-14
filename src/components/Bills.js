@@ -38,7 +38,7 @@ class Bills extends React.Component {
 
     render() {
         return (
-            <Form>
+            <Form onSubmit={event => event.preventDefault()}>
                 <h3>Bills</h3>
                 <PaymentForm addPayment={({ value, name }) => {
                     const expense = this.state.expense;

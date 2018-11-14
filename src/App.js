@@ -9,26 +9,27 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
 
-
-
   render() {
     return (
       <Router>
         <div className="App">
-          <header className="App-header">
-            <div className="golf">
-              <ul>
-                <li>
-                  <Link to="/Landing/">Landing</Link>
-                </li>
-                <li>
-                  <Link to="/Bills/">Expenses</Link>
-                </li>
-              </ul>
-            </div>
-          </header>
+          {/* <header className="App-header"> */}
+          {/* <div className="golf"> */}
+          <ul>
+            <h2 className="link">
+              <Link to="/Landing/">Landing</Link>
+            </h2>
+            <li>
+              <Link className="link" to="/Bills/">Expenses</Link>
+            </li>
+            <li>
+              <Link className="link" to="/Login">Login</Link>
+            </li>
+          </ul>
+          {/* </div> */}
+          {/* </header> */}
 
-          <Route path="/" exact component={Login} />
+          <Route path="/Login" exact component={Login} />
           <Route path="/Landing/" component={Landing} />
           <Route path="/Expenses/" component={Expenses} />
           <Route path="/Bills" component={Bills} />

@@ -12,30 +12,27 @@ class Login extends React.Component {
     monthEarnings = (income, costs) => {
         return [
             {
-                color: "#F7464A",
-                highlight: "#FF5A5E",
-                label: "Costs",
-                value: costs,
-            },
-            {
-                color: "#336699",
-                highlight: "#FF5A5E",
+                color: "#1aff66",
+                highlight: "#00b33c",
                 label: "Income",
                 value: income,
+            },
+            {
+                color: "#3333ff",
+                highlight: "#0000b3",
+                label: "costs",
+                value: costs,
             }]
     }
 
     render() {
         return (
-            <ul>
-                <li>
-                    <Link to="/Landing">Home</Link>
-                    <canvas id="myChart" width="400" height="400"></canvas>
-                    <Pie data={this.monthEarnings(50, 75)} />
 
-                </li>
-            </ul>
-
+            <div>
+                <Link className="chartlink" to="/Landing">Home</Link>
+                {/* <canvas></canvas> */}
+                <Pie data={this.monthEarnings(600, 2200)} />
+            </div>
         );
     }
 }
