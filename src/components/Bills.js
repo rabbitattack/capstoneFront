@@ -2,11 +2,6 @@ import React from 'react';
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import PaymentForm from './PaymentForm';
 
-
-// toDatabase = () => {
-
-// }
-
 class Bills extends React.Component {
     state = {
         income: [],

@@ -1,7 +1,7 @@
 import React from 'react';
-// import Landing from '/components/landing.js';
+import Landing from './Landing';
 import { Link } from "react-router-dom";
-import { Pie } from "react-chartjs";
+import { FormGroup, Input, Button } from 'reactstrap';
 
 class Login extends React.Component {
 
@@ -9,29 +9,20 @@ class Login extends React.Component {
 
     }
 
-    monthEarnings = (income, costs) => {
-        return [
-            {
-                color: "#1aff66",
-                highlight: "#00b33c",
-                label: "Income",
-                value: income,
-            },
-            {
-                color: "#3333ff",
-                highlight: "#0000b3",
-                label: "costs",
-                value: costs,
-            }]
-    }
-
     render() {
+        console.log('login again')
         return (
-
             <div>
-                <Link className="chartlink" to="/Landing">Home</Link>
-                {/* <canvas></canvas> */}
-                <Pie data={this.monthEarnings(600, 2200)} />
+                <FormGroup>
+                    <Input placeholder='name'
+                        value="userName"
+                        onChange={this.handleChange} />
+                    <Input placeholder='value'
+                        value="Password"
+                        onChange={this.handleValue} />
+                    <Button onClick={this.addItem}>Login</Button>
+                </FormGroup>
+                <p className="link">Hello Conrad</p>
             </div>
         );
     }

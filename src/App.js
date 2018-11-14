@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import Landing from './components/Landing.js';
+import Login from './components/Login';
+import Landing from './components/Landing';
 import Expenses from './components/Expenses';
-import Login from './components/Login'
-import Bills from './components/Bills'
+import Bills from './components/Bills';
 // import Image from './components/fogForestCar.jpg'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import PaymentForm from './components/PaymentForm';
 
 class App extends React.Component {
 
@@ -14,27 +15,20 @@ class App extends React.Component {
       <Router>
         <div className="App">
           {/* <header className="App-header"> */}
-          {/* <div className="golf"> */}
-          <ul>
-            <h2 className="link">
-              <Link to="/Landing/">Landing</Link>
-            </h2>
-            <li>
-              <Link className="link" to="/Bills/">Expenses</Link>
-            </li>
-            <li>
-              <Link className="link" to="/Login">Login</Link>
-            </li>
-          </ul>
-          {/* </div> */}
+
+          <div className="link">
+            <Link to="/Login">Login</Link><br />
+          </div>
           {/* </header> */}
 
           <Route path="/Login" exact component={Login} />
-          <Route path="/Landing/" component={Landing} />
+          <Route path="/Landing" exact compoonet={Landing} />
           <Route path="/Expenses/" component={Expenses} />
           <Route path="/Bills" component={Bills} />
+          <Route path="/PaymentForm" component={PaymentForm} />
         </div >
-      </Router >);
+      </Router >
+    );
   }
 }
 
