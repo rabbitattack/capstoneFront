@@ -10,8 +10,6 @@ import PaymentForm from './components/PaymentForm';
 
 class App extends React.Component {
 
-
-
   render() {
     return (
       <Router>

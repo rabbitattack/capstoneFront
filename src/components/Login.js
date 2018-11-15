@@ -9,7 +9,23 @@ class Login extends React.Component {
     state = {
         username: "",
         password: "",
+        expense: 0
     }
+
+    componentDidMount() {
+        fetch('https://capstone-uber.herokuapp.com/api/uber')
+            .then(response => response.json())
+            .then(response =>
+
+                this.setState({
+                    username: response[0].username,
+                    password: response[0].password,
+                    expense: response[0].expense
+
+                }))
+    }
+
+
     onInputChange = e => this.setState({ [e.target.name]: e.target.value });
 
     onLogin = e => {
@@ -46,7 +62,7 @@ class Login extends React.Component {
 
 
     render() {
-        console.log('login again')
+        console.log('state changed', this.state)
         return (
             <div>
                 <FormGroup>
