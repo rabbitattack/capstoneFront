@@ -33,13 +33,15 @@ class Bills extends React.Component {
 
     render() {
         return (
-            <Form onSubmit={event => event.preventDefault()}>
-                <h3>Bills</h3>
-                <PaymentForm addPayment={({ value, name }) => {
-                    const expense = this.state.expense;
-                    this.setState({ expense: expense.concat([{ value, name }]) })
-                }} />
-            </Form >
+            <div className="loginForm">
+                <Form onSubmit={event => event.preventDefault()}>
+                    <h3>Bills</h3>
+                    <PaymentForm addPayment={({ value, name }) => {
+                        const expense = this.state.expense;
+                        this.setState({ expense: expense.concat([{ value, name }]) })
+                    }} />
+                </Form >
+            </div>
         )
     }
 }

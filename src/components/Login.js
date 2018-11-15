@@ -21,9 +21,9 @@ class Login extends React.Component {
                     username: response[0].username,
                     password: response[0].password,
                     expense: response[0].expense
-
                 }))
     }
+
 
 
     onInputChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -64,7 +64,7 @@ class Login extends React.Component {
     render() {
         console.log('state changed', this.state)
         return (
-            <div>
+            <div className="loginForm">
                 <FormGroup>
                     <Input
                         placeholder='Username'
@@ -81,7 +81,6 @@ class Login extends React.Component {
                     />
                     <Button onClick={this.onLogin}><Link to="/Landing">Login</Link></Button>
                 </FormGroup>
-                <p className="link">Hello Conrad</p>
             </div>
         );
     }

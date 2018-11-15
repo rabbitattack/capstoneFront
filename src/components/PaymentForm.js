@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormGroup, Input, Button } from 'reactstrap';
 
-export default class PaymentForm extends React.Component {
+class PaymentForm extends React.Component {
     state = {
         name: '',
         value: '',
@@ -15,8 +15,7 @@ export default class PaymentForm extends React.Component {
     }
 
     addItem = (event) => {
-        console.log('addItem.state', this.state)
-        this.props.addPayment({
+        this.state.addPayment({
             name: this.state.name,
             value: this.state.value,
         })
@@ -34,3 +33,4 @@ export default class PaymentForm extends React.Component {
             </FormGroup>);
     }
 }
+export default PaymentForm

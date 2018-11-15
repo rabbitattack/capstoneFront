@@ -27,6 +27,16 @@
   color: #61dafb;
 }
 
+.billsForm {
+  font-family: "Hoefler Text", "Baskerville Old Face", 
+  Garamond, "Times New Roman", serif; 
+  font-size: 35px;
+  position: bottom;
+  bottom: 5px;
+  justify-content: right;
+  color: #351249;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -51,6 +61,13 @@
   box-shadow: 3px;
 }
 
+.loginForm {
+  position: absolute;
+  bottom: 35px;
+  width: 75%;
+  color: #180c1f;
+}
+
 .land {
   background-image: ("/openRoad.jpg");
   height: 100vh;
@@ -58,7 +75,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 /* .form {
 
 } */
@@ -98,11 +114,18 @@
    font-family: "Hoefler Text", "Baskerville Old Face", 
    Garamond, "Times New Roman", serif; 
    font-size: 24px; 
-   font-style: normal; 
-   font-variant: normal; 
+   /* font-style: normal; 
+   font-variant: normal;  */
    font-weight: 700; 
    line-height: 26.4px; 
    position: relative; 
    width: 100%; 
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.links {
+  font-family: "Hoefler Text", "Baskerville Old Face", 
+  Garamond, "Times New Roman", serif; 
+  font-size: 35px;
+  
 }
