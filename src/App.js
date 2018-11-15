@@ -10,6 +10,8 @@ import PaymentForm from './components/PaymentForm';
 
 class App extends React.Component {
 
+
+
   render() {
     return (
       <Router>
@@ -21,8 +23,8 @@ class App extends React.Component {
           </div>
           {/* </header> */}
 
-          <Route path="/Login" exact component={Login} />
-          <Route path="/Landing" exact compoonet={Landing} />
+          <Route path="/Login" component={Login} />
+          <Route path="/Landing" component={Landing} />
           <Route path="/Expenses/" component={Expenses} />
           <Route path="/Bills" component={Bills} />
           <Route path="/PaymentForm" component={PaymentForm} />
